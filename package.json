@@ -1,6 +1,6 @@
 {
   "name": "@visnicio/sayit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A multi language phrases generator for alerts and notifications",
   "main": "SayIt_EN.js",
   "scripts": {
@@ -8,5 +8,5 @@
   },
   "keywords": ["sayit", "phrases", "say it", "alert text"],
   "author": "Vinicus Antonio da Silva A.K.A. Visnicio",
-  "license": "ISC"
+  "license": "MIT"
 }

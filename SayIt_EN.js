@@ -1,9 +1,8 @@
 function generateNewPhrase(mood) {
-    var randomNumber = Math.floor(Math.random() * 5 + 1);
-
     switch (mood) {
         case "happy":
-            return happyPhrases[randomNumber];
+
+            return happyPhrases[generateRandomIndex(0, happyPhrases.length)];
         case "sad":
             return sadPhrases[randomNumber];
         case "angry":
@@ -11,12 +10,19 @@ function generateNewPhrase(mood) {
     }
 }
 
+function generateRandomIndex(min, max){
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
 const happyPhrases = {
-    "1": "Dados orbitando a terra 🚀",
-    "2": "Você é incrível!",
-    "3": "Como esta o dia hoje? ☀",
-    "4": "IIIIIRRRÁÁÁ 🤠",
-    "5": "Gostei de ver"
+    "1": "To infinite and beyond 🚀",
+    "2": "You are amazing!",
+    "3": "How's the day? ☀",
+    "4": "HURRAAAAYY",
+    "5": "noice",
+    "6": "You are the best!",
+    "7": "You are doing great.",
+    "8": "Chad detected ✅",
 }
 
 module.exports = generateNewPhrase;
